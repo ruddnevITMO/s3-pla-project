@@ -97,6 +97,7 @@ new TypeIt("#code2", {
   waitUntilVisible: true,
   cursor: false,
   afterComplete: function (instance) {
+    document.getElementById("graph3").style.opacity = 1;
     instance.destroy();
     hljs.highlightAll();
   }
@@ -171,3 +172,19 @@ new TypeIt("#code8", {
     hljs.highlightAll();
   }
 }).go();
+
+
+const seps = gsap.utils.toArray('.separator');
+seps.forEach(sep => {
+  gsap.from(sep, {
+  scrollTrigger: {
+    trigger: sep,
+    scrub: true,
+    start: "top bottom",
+    end: "top top"
+  },
+  scaleX: 0,
+  transformOrigin: "left center", 
+  ease: "none"
+});
+});
