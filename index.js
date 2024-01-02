@@ -46,7 +46,6 @@ function render() {
 }
 
 
-
 gsap.utils.toArray(".text-highlight").forEach((highlight) => {
   ScrollTrigger.create({
     trigger: highlight,

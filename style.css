@@ -79,6 +79,21 @@ canvas {
   max-height: 100vh;
 }
 
+:root {
+  --bg-color-hsl: 0, 0%, 7%;
+  --bg-color: hsl(var(--bg-color-hsl));
+  --bg-color-translucent: hsla(var(--bg-color-hsl), 0.95);
+  --bg-color-highlight: #515f44;
+  --color-text: hsl(0, 0%, 80%);
+  --color-text-highlight: hsl(0, 0%, 100%);
+  --page-width: 80ch;
+  --paragraph-font-size: min(max(1.2rem, 4vw), 1.4rem);
+  --header-font-size: min(max(2rem, 8vw), 4rem);
+  --space: 2rem;
+  --padding: 8vmin;
+  --duration: 2s;
+  --ease: cubic-bezier(0.25, 1, 0.5, 1);
+}
 
 
 .text-highlight {
@@ -271,4 +286,5 @@ audio::-webkit-media-controls-panel {
   body {font-size: 18px;}
   .vert-center {margin: auto}
   .containered {max-width: 90vw;}
+  .table-home {overflow-y: scroll; margin: auto !important; padding-bottom: 2vh;}
 }
