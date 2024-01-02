@@ -284,6 +284,7 @@ audio::-webkit-media-controls-panel {
   .split {flex-direction: column;}
   img, table {max-width: 80vw; height: auto !important}
   body {font-size: 18px;}
+  code {font-size: 13px;}
   .vert-center {margin: auto}
   .containered {max-width: 90vw;}
   .table-home {overflow-y: scroll; margin: auto !important; padding-bottom: 2vh;}
